@@ -1,0 +1,54 @@
+# Configuration de mira_utils.
+# Après une modification : taper `restart <nom du dossier>` dans la console du serveur
+# (ex. `restart mira_utils`, pas besoin de recompiler).
+# Une valeur invalide ou absente reprend sa valeur par défaut (message dans la console serveur).
+
+[general]
+# Messages de diagnostic dans la console serveur et la console F8
+# (config chargée, noclip activé/désactivé, téléportations…).
+# Les erreurs et la liste des modules chargés s'affichent toujours.
+debug = false
+
+[admin]
+# Pseudos (nickname CyberMP) autorisés à utiliser les outils dont `allow_all = false`.
+# Exemple : players = ["MonPseudo", "UnAutreAdmin"]
+# Par défaut, personne : ajoute ton pseudo ici pour utiliser les outils.
+players = []
+
+[spawn]
+# Spawn automatique à la connexion, à l'endroit où se trouve le joueur.
+# CyberMP ne synchronise un joueur (position visible par le serveur et les autres joueurs)
+# qu'après un mp.local.spawnPlayer : sans lui, le serveur le voit en 0 0 0 et `car` ne marche pas.
+# Mettre false si un autre script de ton serveur spawne déjà les joueurs.
+# La commande F8 `respawn` reste disponible dans tous les cas.
+enabled = true
+
+[noclip]
+# Vitesse de déplacement, en mètres par seconde (1 à 500).
+speed = 40
+
+# Multiplicateur appliqué en maintenant Shift (1 à 20).
+fast_multiplier = 2.5
+
+# Rotation horizontale à la souris : coefficient × sensibilité souris du jeu (0.001 à 1).
+# Plus grand = rotation plus rapide.
+mouse_coefficient = 0.01
+
+# Qui peut utiliser le noclip (F2) :
+#   false = seulement les pseudos de [admin] (recommandé sur un serveur public)
+#   true  = tout le monde (pratique en local)
+allow_all = false
+
+[teleport]
+# Commandes F8 `tp x y [z]` (sans z : posé au sol) et `tpm` (marqueur de la carte, posé au sol).
+# false = admins de [admin] seulement, true = tout le monde.
+allow_all = false
+
+[vehicles]
+# Commandes F8 `car <nom>`, `dv` et `carlist` (catalogue : vehicles.toml).
+# false = admins de [admin] seulement, true = tout le monde.
+allow_all = false
+
+# Vie des véhicules créés (1 à 100000). Toujours la passer à la création, comme freeroam
+# (2000) et l'exemple de la doc : sans elle, le véhicule pourrait être créé déjà détruit.
+health = 2000

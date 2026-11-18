@@ -1,0 +1,287 @@
+# Catalogue des véhicules de la commande F8 `car <name>` (module vehicles de mira_utils).
+# Après une modification : `restart <nom du dossier>` (ex. `restart mira_utils`).
+#
+# Pour ajouter un véhicule, copier un bloc [[vehicle]] :
+#   name       = nom court tapé après `car` (unique, minuscules, sans espace)
+#   label      = nom affiché
+#   category   = sport, street, offroad, bike… (libre, sert à `carlist <catégorie>`)
+#   model      = record TweakDB du véhicule ("Vehicle.v_…")
+#   appearance = apparence (peinture/variante) correspondant à ce modèle
+#   tested     = false tant qu'il n'a pas été essayé en jeu (carlist affiche « non testé » ;
+#                `carlist untested` liste ceux qui restent à essayer). Absent = testé.
+#
+# Liste de départ : 39 véhicules repris de CyberMP-Freeroam (licence MIT,
+# github.com/Cyber-MP/CyberMP-Freeroam, server/src/modules/vehicles-spawner/vehicles.repository.ts).
+
+[[vehicle]]
+name = "aerondight"
+label = "Rayfield Aerondight"
+category = "sport"
+model = "Vehicle.v_sport1_rayfield_aerondight_player"
+appearance = "rayfield_aerondight__basic_player_01"
+
+[[vehicle]]
+name = "caliburn"
+label = "Rayfield Caliburn"
+category = "sport"
+model = "Vehicle.v_sport1_rayfield_caliburn_player"
+appearance = "rayfield_caliburn__basic_player_01"
+
+[[vehicle]]
+name = "bandit"
+label = "Archer Quartz Bandit"
+category = "sport"
+model = "Vehicle.v_standard2_archer_bandit"
+appearance = "archer_bandit_bandit_01"
+
+[[vehicle]]
+name = "911cabrio"
+label = "Porsche 911 Turbo Cabriolet 930"
+category = "sport"
+model = "Vehicle.v_sport2_porsche_911turbo_cabrio_player"
+appearance = "porsche_911turbo__basic_cabrio_01"
+
+[[vehicle]]
+name = "911"
+label = "Porsche 911 Turbo"
+category = "sport"
+model = "Vehicle.v_sport2_porsche_911turbo_player"
+appearance = "porsche_911turbo__basic_johnny"
+
+[[vehicle]]
+name = "outlaw"
+label = "Herrera Outlaw"
+category = "sport"
+model = "Vehicle.v_sport1_herrera_outlaw_player"
+appearance = "herrera_outlaw__basic_player_01"
+
+[[vehicle]]
+name = "turbo740"
+label = "Quadra Turbo-R 740"
+category = "sport"
+model = "Vehicle.v_sport1_quadra_turbo_player"
+appearance = "quadra_turbo_basic_player_02"
+
+[[vehicle]]
+name = "turbor"
+label = "Quadra Turbo-R V-TECH"
+category = "sport"
+model = "Vehicle.v_sport1_quadra_turbo_r_player"
+appearance = "quadra_turbo_basic_player"
+
+[[vehicle]]
+name = "shion"
+label = "Mizutani Shion MZ2"
+category = "sport"
+model = "Vehicle.v_sport2_mizutani_shion_player"
+appearance = "mizutani_shion__basic_player_01"
+
+[[vehicle]]
+name = "alvarado"
+label = "Villefort Alvarado V4F"
+category = "sport"
+model = "Vehicle.v_sport2_villefort_alvarado_player"
+appearance = "villefort_alvarado__basic_player_01"
+
+[[vehicle]]
+name = "semimaru"
+label = "Yaiba Semimaru"
+category = "sport"
+model = "Vehicle.v_sport1_yaiba_semimaru_player"
+appearance = "yaiba_semimaru_basic_urban_01"
+
+[[vehicle]]
+name = "type66bullit"
+label = "Quadra Type66 Bullit"
+category = "sport"
+model = "Vehicle.v_sport2_quadra_type66_02_player"
+appearance = "quadra_type66__basic_bulleat"
+
+[[vehicle]]
+name = "type66"
+label = "Quadra Type66 640 TS"
+category = "sport"
+model = "Vehicle.v_sport2_quadra_type66_base_player"
+appearance = "quadra_type66__basic_suburban_06"
+
+[[vehicle]]
+name = "type66jen"
+label = "Quadra Type66 Jen Rowley"
+category = "sport"
+model = "Vehicle.v_sport2_quadra_type66_player"
+appearance = "quadra_type66__basic_jen_rowley"
+
+[[vehicle]]
+name = "quartz"
+label = "Archer Quartz EC-L R275"
+category = "street"
+model = "Vehicle.v_standard2_archer_quartz_base_player"
+appearance = "archer_quartz__basic_suburban_1_1"
+
+[[vehicle]]
+name = "supron"
+label = "Mahir Supron FS3"
+category = "street"
+model = "Vehicle.v_standard25_mahir_supron_player"
+appearance = "mahir_supron__basic_player_01"
+
+[[vehicle]]
+name = "colby"
+label = "Thorton Colby CST40"
+category = "street"
+model = "Vehicle.v_standard2_thorton_colby_gt_player"
+appearance = "thorton_colby__basic_urban_01_1"
+
+[[vehicle]]
+name = "galena"
+label = "Thorton Galena G240"
+category = "street"
+model = "Vehicle.v_standard2_thorton_galena_player"
+appearance = "thorton_galena__basic_player_01"
+
+[[vehicle]]
+name = "maimai"
+label = "Makagai MaiMai"
+category = "street"
+model = "Vehicle.v_standard2_makigai_maimai_player"
+appearance = "makigai_maimai__basic_player_01"
+
+[[vehicle]]
+name = "shioncoyote"
+label = "Mitzutani Shion Coyote"
+category = "offroad"
+model = "Vehicle.v_sport2_mizutani_shion_nomad_player"
+appearance = "mizutani_shion_nomad_player_01"
+
+[[vehicle]]
+name = "colbybutte"
+label = "Thorton Colby CX410 Butte"
+category = "offroad"
+model = "Vehicle.v_standard25_thorton_colby_pickup_player"
+appearance = "thorton_colby_pickup_player_01"
+
+[[vehicle]]
+name = "emperorpolice"
+label = "Chevalier Emperor NCPD"
+category = "offroad"
+model = "Vehicle.v_standard3_chevalier_emperor_police"
+appearance = "chevalier_emperor__basic_police"
+
+[[vehicle]]
+name = "emperormilitech"
+label = "Chevalier Emperor Militech"
+category = "offroad"
+model = "Vehicle.v_standard3_chevalier_emperor_militech_wasteland_prevention"
+appearance = "chevalier_emperor__basic_militech"
+
+[[vehicle]]
+name = "emperor"
+label = "Chevalier Emperor"
+category = "offroad"
+model = "Vehicle.v_standard3_chevalier_emperor_player"
+appearance = "chevalier_emperor__basic_player_01"
+
+[[vehicle]]
+name = "legatus"
+label = "Chevalier Legatus"
+category = "offroad"
+model = "Vehicle.v_utility4_chevalier_legatus_player"
+appearance = "chevalier_legatus_basic_legatus_aquila_01"
+
+[[vehicle]]
+name = "littlemule"
+label = "Thorton Colby Little Mule"
+category = "offroad"
+model = "Vehicle.v_standard25_thorton_colby_nomad_player"
+appearance = "thorton_colby_pickup_nomad_player_01"
+
+[[vehicle]]
+name = "gecko"
+label = "Thorton Galena Gecko"
+category = "offroad"
+model = "Vehicle.v_standard2_thorton_galena_nomad_player"
+appearance = "thorton_galena_nomad_player_01"
+
+[[vehicle]]
+name = "saguaro"
+label = "Thorton Machinaw Saguaro"
+category = "offroad"
+model = "Vehicle.v_standard3_thorton_mackinaw_02_player"
+appearance = "thorton_mackinaw_nomad_saguaro_01"
+
+[[vehicle]]
+name = "wingate"
+label = "Quadra Type66 Wingate"
+category = "offroad"
+model = "Vehicle.v_sport2_quadra_type66_nomad_player_03"
+appearance = "quadra_type66_nomad_player_03"
+
+[[vehicle]]
+name = "nazareitsumade"
+label = "Arch Nazare ITSUMADE"
+category = "bike"
+model = "Vehicle.v_sportbike2_arch_tyger_player"
+appearance = "arch_nemesis_basic_tygerclaws_boss_01"
+
+[[vehicle]]
+name = "nazarekobold"
+label = "Arch Nazare KOBOLD"
+category = "bike"
+model = "Vehicle.v_sportbike2_arch_player_03"
+appearance = "arch_nemesis_basic_player_03"
+
+[[vehicle]]
+name = "nazareracer"
+label = "Arch Nazare RACER"
+category = "bike"
+model = "Vehicle.v_sportbike2_arch_player_02"
+appearance = "arch_nemesis_basic_player_02"
+
+[[vehicle]]
+name = "nazare"
+label = "Arch Nazare"
+category = "bike"
+model = "Vehicle.v_sportbike2_arch_player"
+appearance = "arch_nemesis_basic_player_01"
+
+[[vehicle]]
+name = "kusanagiakashita"
+label = "Yaiba Kusanagi Akashita"
+category = "bike"
+model = "Vehicle.v_sportbike1_yaiba_kusanagi_player_03"
+appearance = "yaiba_kusanagi_basic_player_03"
+
+[[vehicle]]
+name = "kusanagi"
+label = "Yaiba Kusanagi CT-3X"
+category = "bike"
+model = "Vehicle.v_sportbike1_yaiba_kusanagi_player"
+appearance = "yaiba_kusanagi_basic_player_01"
+
+[[vehicle]]
+name = "kusanagipeacekeeper"
+label = "Yaiba Kusanagi Peacekeeper"
+category = "bike"
+model = "Vehicle.v_sportbike1_yaiba_kusanagi_player_02"
+appearance = "yaiba_kusanagi_basic_player_02"
+
+[[vehicle]]
+name = "apollo650"
+label = "Brennan Apollo 650-S"
+category = "bike"
+model = "Vehicle.v_sportbike3_brennan_apollo_player_02"
+appearance = "brennan_apollo_basic_player_02"
+
+[[vehicle]]
+name = "apollo"
+label = "Brennan Apollo"
+category = "bike"
+model = "Vehicle.v_sportbike3_brennan_apollo_player"
+appearance = "brennan_apollo_basic_player_01"
+
+[[vehicle]]
+name = "apolloscorpion"
+label = "Brennan Apollo Scorpion's"
+category = "bike"
+model = "Vehicle.v_sportbike3_brennan_apollo_nomad_player"
+appearance = "brennan_apollo_basic_scorpion"

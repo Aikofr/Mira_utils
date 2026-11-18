@@ -1,0 +1,4 @@
+# mira_utils : boîte à outils de développement CyberMP (noclip, tp, véhicules…). Réglages : config.toml.
+server_script = './dist/server.js'
+client_script = './dist/client.js'
+use_game_natives = true   # nécessaire pour appeler mp.game.* côté client
